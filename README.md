@@ -1,159 +1,126 @@
-🤖 AI Mock Interview Platform
+🚀 AI Mock Interview Platform 🤖
 
-A powerful, modern, and AI-driven mock interview platform built using Next.js, ShadCN, Convex, Clerk, ImageKit, and n8n + OpenAI automation.
-Upload your resume, generate job-specific interview questions, and practice with an intelligent AI interviewer — all in one place.
+Transform the way you prepare for interviews with AI!
+A powerful, next-gen mock interview system built using cutting-edge AI, designed to help you practice, improve, and excel.
+Built with Next.js, n8n, Convex, and Clerk, it delivers personalized interview experiences, real-time feedback, and AI-generated insights — all inside a sleek dashboard.
 
-Perfect for students, job seekers, developers, and professionals preparing for interviews.
 
-🚀 Live Demo
-<img width="1905" height="905" alt="image" src="https://github.com/user-attachments/assets/48257982-f289-47b8-bb89-a4a481326941" />
+
+🌐 Live Demo
+<img width="1905" height="905" alt="image" src="https://github.com/user-attachments/assets/6c37617a-e180-4207-aa31-2d1abb52c407" />
+
+
 
 
 🧰 Tech Stack
 
-⚛️ Next.js (App Router)
-
-🎨 ShadCN UI + Tailwind CSS
-
+⚛️ Next.js 15 (App Router)
+🎨 ShadCN/UI + Tailwind CSS
 🔐 Clerk Authentication
+💾 Convex Database
+☁️ ImageKit.io (Resume Upload Storage)
+🤖 OpenAI via n8n Automation
+🗂️ Arkjet AI (Mock Interview Engine)
+⚡ React Context API
 
-🗄️ Convex Database
 
-☁️ ImageKit.io for Resume Storage
+💡 Key Features
+✅ Upload Resume — securely store your resume (PDF)
+🤖 AI-Generated Questions — personalized per job role
+🧠 Realistic AI Interviewer — powered by Arkjet + n8n
+🔄 Live Question Flow — smooth and interactive
+📊 Smart Feedback & Scoring — real-time AI evaluation
+🔐 User Authentication — seamless login/signup with Clerk
+🎨 Elegant UI — minimal, responsive design using ShadCN/UI
+⚙️ Automated Workflows — fully integrated n8n automation
+💽 Real-Time Storage — using Convex backend
 
-🤖 OpenAI + n8n Automation
 
-🧠 Arkjet AI Interview Engine
-
-🔄 React Context API
-
-🎯 TypeScript
-
-📸 Features
-
-✅ AI-generated interview questions based on your resume
-
-📄 Upload resume with ImageKit cloud storage
-
-🧠 Real-time AI mock interview using Arkjet
-
-🔄 Automatic question generation using n8n + OpenAI
-
-📊 Dashboard to view saved interviews and progress
-
-🔐 Secure authentication using Clerk
-
-🎨 Modern and clean UI with ShadCN components
-
-⚡ Fast, real-time backend powered by Convex
-
-🌐 Fully responsive design
-
-🖼️ Screenshots
-
-Add your images here if needed
-
-[Screenshot Section — swap with actual images]
-
-🛠️ Installation
+🛠️ Installation Guide
 ✅ Prerequisites
 
-Node.js 18+
+Node.js v18+
 
-npm / yarn / pnpm
+npm / yarn
 
-Convex account
+Convex CLI (optional, for local DB)
 
-Clerk account
-
-ImageKit account
-
-n8n local or cloud workspace
-
-✅ Steps
-# Clone the repo
+⚙️ Setup Steps
+# Clone the repository
 git clone https://github.com/amansingh2426/ai-mock-interview-platform.git
 
-# Navigate into the project
+# Navigate to the project directory
 cd ai-mock-interview-platform
 
 # Install dependencies
 npm install
 
-# Start the local development server
+# Run the local development server
 npm run dev
 
 🔧 Environment Variables
 
-Create a .env.local file:
+Create a .env.local file in your root directory and add:
 
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_key
-CLERK_SECRET_KEY=your_clerk_secret_key
+# Clerk Authentication
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_key
+CLERK_SECRET_KEY=your_secret
 
+# Convex
 NEXT_PUBLIC_CONVEX_URL=your_convex_url
 CONVEX_DEPLOYMENT=your_convex_deployment
 
-NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY=your_imagekit_key
-IMAGEKIT_PRIVATE_KEY=your_imagekit_private_key
-IMAGEKIT_URL_ENDPOINT=your_imagekit_endpoint
+# ImageKit
+NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY=your_key
+IMAGEKIT_PRIVATE_KEY=your_private_key
+IMAGEKIT_URL_ENDPOINT=your_url
 
+# n8n Webhook
 N8N_WEBHOOK_URL=your_n8n_webhook_url
 
-📦 Project Structure
+📂 Project Structure
 app/
- ├── (auth)/                # Clerk sign-in, sign-up
- ├── (routes)/dashboard/    # Dashboard pages
- ├── api/                   # Upload & AI routes
- ├── provider.tsx           # Convex provider
- └── page.tsx               # Homepage with Hero + Header
+ ├── (auth)/sign-in
+ ├── (auth)/sign-up
+ ├── (routes)/dashboard
+ ├── api/upload
+ ├── provider.tsx
+ └── page.tsx
 
 context/
- └── UserDetailContext.tsx  # Global state management
+ └── UserDetailContext.tsx
 
 convex/
  ├── schema.ts
  ├── api.ts
  └── users.ts
 
-🔗 Integrations
-🤖 n8n + OpenAI
+🌟 Highlights
 
-Automatically generates interview questions based on:
+🚀 Fast Resume Upload & Parsing
 
-Resume content
+🤖 AI-Based Question Generation
 
-Job title
+🧩 Fully Automated with n8n
 
-Job description
+🧠 Real-Time Interview Simulation
 
-☁️ ImageKit
+📊 AI-Driven Feedback & Scoring
 
-Stores resume PDF files securely.
+🔐 Secure Authentication via Clerk
 
-🔐 Clerk
+🎨 Sleek UI with ShadCN + Tailwind
 
-Provides:
+🔮 Future Enhancements
 
-Sign-in
+🎙️ Voice-Based Interview Mode
 
-Sign-out
+📈 Analytics Dashboard & Performance Graphs
 
-User sessions
+🧠 AI-Based Resume Scoring System
 
-Authentication middleware
+💬 Sentiment Analysis for Answers
 
-🗄️ Convex
-
-Stores:
-
-User data
-
-Interview questions
-
-Interview history
-
-Resume URLs
-
-📜 License
+🧾 License
 
 MIT License © 2025 Aman Singh
