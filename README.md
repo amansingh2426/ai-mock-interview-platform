@@ -1,126 +1,84 @@
-🚀 AI Mock Interview Platform 🤖
+# AI Voice Agent Interview Platform
 
-Transform the way you prepare for interviews with AI!
-A powerful, next-gen mock interview system built using cutting-edge AI, designed to help you practice, improve, and excel.
-Built with Next.js, n8n, Convex, and Clerk, it delivers personalized interview experiences, real-time feedback, and AI-generated insights — all inside a sleek dashboard.
+An interactive AI-powered web application that simulates job interviews through real-time voice conversations.  
+Built with **Next.js**, **React**, **TailwindCSS**, **OpenAI**, and **Deepgram**, this platform delivers a realistic interview experience with AI-generated questions, dynamic follow-ups, and instant feedback.
 
+---
 
+## 🚀 Live Demo
+🔗 **[View Project Here](https://ai-voice-agent-interview-platform-jlx6r2oyz.vercel.app/)**
 
-🌐 Live Demo
-<img width="1905" height="905" alt="image" src="https://github.com/user-attachments/assets/6c37617a-e180-4207-aa31-2d1abb52c407" />
+---
 
+## ✨ Features
+- 🎙️ **Voice-based interaction** with an AI interviewer
+- 🤖 **Dynamic AI-generated questions** using OpenAI
+- ⏯️ **Pause/Resume** interview functionality
+- 📊 **Track interview progress** through stages
+- 🔄 **Real-time feedback** on responses
+- 🎯 **Custom follow-up questions** based on answers
+- 🛡️ **Rate limiting** to protect API endpoints
+- ♿ **Accessibility-focused design** following WCAG guidelines
 
+---
 
+## ♿ Accessibility Features
+- **Keyboard Navigation** – full keyboard support & visible focus indicators  
+- **Screen Reader Support** – semantic HTML, ARIA landmarks, descriptive labels  
+- **Audio Interface** – play/pause controls, synced visual indicators  
+- **Visual Accessibility** – high contrast mode, clear status indicators  
 
-🧰 Tech Stack
+---
 
-⚛️ Next.js 15 (App Router)
-🎨 ShadCN/UI + Tailwind CSS
-🔐 Clerk Authentication
-💾 Convex Database
-☁️ ImageKit.io (Resume Upload Storage)
-🤖 OpenAI via n8n Automation
-🗂️ Arkjet AI (Mock Interview Engine)
-⚡ React Context API
+## 🛠 Tech Stack
+- **Framework**: Next.js 14
+- **Frontend**: React, TailwindCSS
+- **AI Services**:
+  - OpenAI GPT for question generation
+  - Deepgram for Speech-to-Text & Text-to-Speech
+- **State Management**: React Context API
+- **API Security**: In-memory rate limiting
 
+---
 
-💡 Key Features
-✅ Upload Resume — securely store your resume (PDF)
-🤖 AI-Generated Questions — personalized per job role
-🧠 Realistic AI Interviewer — powered by Arkjet + n8n
-🔄 Live Question Flow — smooth and interactive
-📊 Smart Feedback & Scoring — real-time AI evaluation
-🔐 User Authentication — seamless login/signup with Clerk
-🎨 Elegant UI — minimal, responsive design using ShadCN/UI
-⚙️ Automated Workflows — fully integrated n8n automation
-💽 Real-Time Storage — using Convex backend
+## 📦 Getting Started
 
-
-🛠️ Installation Guide
-✅ Prerequisites
-
-Node.js v18+
-
-npm / yarn
-
-Convex CLI (optional, for local DB)
-
-⚙️ Setup Steps
-# Clone the repository
-git clone https://github.com/amansingh2426/ai-mock-interview-platform.git
-
-# Navigate to the project directory
-cd ai-mock-interview-platform
-
-# Install dependencies
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/amansingh2426/ai-voice-agent-interview.git
+cd ai-voice-agent-interview
+2️⃣ Install Dependencies
+bash
+Copy
+Edit
 npm install
+# or
+yarn install
+3️⃣ Set Up Environment Variables
+Create a .env.local file in the root:
 
-# Run the local development server
+env
+Copy
+Edit
+OPENAI_API_KEY=your_openai_api_key
+DEEPGRAM_API_KEY=your_deepgram_api_key
+
+RATE_LIMIT_POINTS=10
+RATE_LIMIT_DURATION=1
+RATE_LIMIT_BLOCK_DURATION=60
+4️⃣ Run Locally
+bash
+Copy
+Edit
 npm run dev
+# or
+yarn dev
+Visit: http://localhost:3000
 
-🔧 Environment Variables
+🔗 Project Links
+Live Demo → https://ai-voice-agent-interview-platform-jlx6r2oyz.vercel.app/
 
-Create a .env.local file in your root directory and add:
+GitHub Repo → https://github.com/amansingh2426/ai-voice-agent-interview
 
-# Clerk Authentication
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_key
-CLERK_SECRET_KEY=your_secret
-
-# Convex
-NEXT_PUBLIC_CONVEX_URL=your_convex_url
-CONVEX_DEPLOYMENT=your_convex_deployment
-
-# ImageKit
-NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY=your_key
-IMAGEKIT_PRIVATE_KEY=your_private_key
-IMAGEKIT_URL_ENDPOINT=your_url
-
-# n8n Webhook
-N8N_WEBHOOK_URL=your_n8n_webhook_url
-
-📂 Project Structure
-app/
- ├── (auth)/sign-in
- ├── (auth)/sign-up
- ├── (routes)/dashboard
- ├── api/upload
- ├── provider.tsx
- └── page.tsx
-
-context/
- └── UserDetailContext.tsx
-
-convex/
- ├── schema.ts
- ├── api.ts
- └── users.ts
-
-🌟 Highlights
-
-🚀 Fast Resume Upload & Parsing
-
-🤖 AI-Based Question Generation
-
-🧩 Fully Automated with n8n
-
-🧠 Real-Time Interview Simulation
-
-📊 AI-Driven Feedback & Scoring
-
-🔐 Secure Authentication via Clerk
-
-🎨 Sleek UI with ShadCN + Tailwind
-
-🔮 Future Enhancements
-
-🎙️ Voice-Based Interview Mode
-
-📈 Analytics Dashboard & Performance Graphs
-
-🧠 AI-Based Resume Scoring System
-
-💬 Sentiment Analysis for Answers
-
-🧾 License
-
+📜 License
 MIT License © 2025 Aman Singh
