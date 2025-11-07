@@ -1,24 +1,25 @@
 # AI Voice Agent Interview Platform
 
-An interactive AI-powered web application that simulates job interviews through real-time voice conversations.  
-Built with **Next.js**, **React**, **TailwindCSS**, **OpenAI**, and **Deepgram**, this platform delivers a realistic interview experience with AI-generated questions, dynamic follow-ups, and instant feedback.
+An advanced AI-powered web application that simulates real job interviews with interactive, dynamic, and personalized question flows.
+Built using Next.js, ShadCN/UI, Convex, Clerk, ImageKit, n8n, and Arkjet AI, this platform helps users practice interviews, analyze performance, and improve confidence — all within an elegant dashboard.
 
 ---
 
-## 🚀 Live Demo
-🔗 **[View Project Here](https://ai-voice-agent-interview-platform-jlx6r2oyz.vercel.app/)**
+## 🚀 VIEW PROJECT
+🔗 <img width="1902" height="907" alt="image" src="https://github.com/user-attachments/assets/0eb0f378-37d4-4249-8420-f5262ddeefac" />
+
 
 ---
 
 ## ✨ Features
-- 🎙️ **Voice-based interaction** with an AI interviewer
-- 🤖 **Dynamic AI-generated questions** using OpenAI
-- ⏯️ **Pause/Resume** interview functionality
-- 📊 **Track interview progress** through stages
-- 🔄 **Real-time feedback** on responses
-- 🎯 **Custom follow-up questions** based on answers
-- 🛡️ **Rate limiting** to protect API endpoints
-- ♿ **Accessibility-focused design** following WCAG guidelines
+- 🧠 **AI-generated interview** questions tailored to your resume
+- 🎙️ **Interactive AI** interview sessions powered by Arkjet
+- 📄 **Resume upload** using ImageKit cloud storage
+- 🤖 **Automated workflows** with n8n (OpenAI integration)
+- 🔐 **Secure authentication** via Clerk
+- 💽 **Convex database** for instant data updates
+- 🎨 **Modern UI** built with ShadCN + TailwindCSS
+- ⚡ **Seamless routing** & dashboard management using Next.js App Router
 
 ---
 
@@ -33,52 +34,54 @@ Built with **Next.js**, **React**, **TailwindCSS**, **OpenAI**, and **Deepgram**
 ## 🛠 Tech Stack
 - **Framework**: Next.js 14
 - **Frontend**: React, TailwindCSS
-- **AI Services**:
-  - OpenAI GPT for question generation
-  - Deepgram for Speech-to-Text & Text-to-Speech
+- **Authentication**: Clerk
+- **Database**: Convex (Open Source)
+- **Storage**: ImageKit.io (Resume Uploads)
+- **Automation**: n8n + OpenAI Integration
+- **AI Engine**: Arkjet (Interview Generation)
 - **State Management**: React Context API
-- **API Security**: In-memory rate limiting
 
 ---
 
-## 📦 Getting Started
+📦 Getting Started
+1️⃣ Clone the Repository
+git clone https://github.com/amansingh2426/ai-mock-interview-app.git
+cd ai-mock-interview-app
 
-### 1️⃣ Clone the Repository
-```bash
-git clone https://github.com/amansingh2426/ai-voice-agent-interview.git
-cd ai-voice-agent-interview
 2️⃣ Install Dependencies
-bash
-Copy
-Edit
 npm install
 # or
 yarn install
+
 3️⃣ Set Up Environment Variables
-Create a .env.local file in the root:
 
-env
-Copy
-Edit
+Create a .env.local file in the root directory and add:
+
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+
+NEXT_PUBLIC_CONVEX_URL=your_convex_url
+
+NEXT_PUBLIC_IMAGEKIT_PUBLIC_KEY=your_imagekit_public_key
+IMAGEKIT_PRIVATE_KEY=your_imagekit_private_key
+IMAGEKIT_URL_ENDPOINT=your_imagekit_url_endpoint
+
 OPENAI_API_KEY=your_openai_api_key
-DEEPGRAM_API_KEY=your_deepgram_api_key
+ARKJET_API_KEY=your_arkjet_api_key
+N8N_WEBHOOK_URL=your_n8n_workflow_webhook
 
-RATE_LIMIT_POINTS=10
-RATE_LIMIT_DURATION=1
-RATE_LIMIT_BLOCK_DURATION=60
 4️⃣ Run Locally
-bash
-Copy
-Edit
 npm run dev
 # or
 yarn dev
-Visit: http://localhost:3000
+
+
+Visit 👉 http://localhost:3000
 
 🔗 Project Links
-Live Demo → https://ai-voice-agent-interview-platform-jlx6r2oyz.vercel.app/
 
-GitHub Repo → https://github.com/amansingh2426/ai-voice-agent-interview
+💻 GitHub Repo → https://github.com/amansingh2426/ai-mock-interview-app
 
 📜 License
-MIT License © 2025 Aman Singh
+
+MIT License © 2025 Aman Singhingh
