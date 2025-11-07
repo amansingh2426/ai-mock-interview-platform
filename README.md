@@ -45,7 +45,7 @@ Built using Next.js, ShadCN/UI, Convex, Clerk, ImageKit, n8n, and Arkjet AI, thi
 
 📦 Getting Started
 1️⃣ Clone the Repository
-git clone https://github.com/amansingh2426/ai-mock-interview-app.git
+git clone https://github.com/amansingh2426/ai-mock-interview-platform.git
 cd ai-mock-interview-app
 
 2️⃣ Install Dependencies
@@ -80,7 +80,7 @@ Visit 👉 http://localhost:3000
 
 🔗 Project Links
 
-💻 GitHub Repo → https://github.com/amansingh2426/ai-mock-interview-app
+💻 GitHub Repo → https://github.com/amansingh2426/ai-mock-interview-platform
 
 📜 License
 
